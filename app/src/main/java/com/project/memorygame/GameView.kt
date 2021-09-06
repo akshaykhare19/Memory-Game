@@ -16,8 +16,8 @@ class GameView(private val inputData: ArrayList<TextView>,
     }
 
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
-        val currentItem = inputData[position]
-        holder.binding.toString()
+        val currentTile = inputData[position]
+        holder.binding.tile.addView(currentTile)
     }
 
     override fun getItemCount() = inputData.size
